@@ -12,3 +12,8 @@
   --background-color: var(--light);
   --color: var(--dark);
 }
+
+body {
+  color: var(--color);
+  background-color: var(--background-color);
+}
