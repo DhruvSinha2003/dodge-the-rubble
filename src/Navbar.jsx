@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./App.css";
 const Navbar = () => {
   const [theme, setTheme] = useState("dark");
 
@@ -12,7 +12,16 @@ const Navbar = () => {
   }
   return (
     <div className="navbar">
-      <div className="logo"></div>
+      <div className="logo">
+        <img
+          src={
+            theme === "light"
+              ? "/logo_dark_transparent.png"
+              : "/logo_light_transparent.png"
+          }
+          alt="Logo"
+        />
+      </div>
       <div className="hamburger"></div>
       <div className="theme">
         <button onClick={toggleTheme}>Toggle Theme</button>
